@@ -41,9 +41,9 @@ const handleTransformData = (sourceData: Record<string, any>) => {
                 eachOutputFromInput.push(productCaroselData)
             }
         })
-        if (eachOutputFromInput?.length > 1) {
+        // if (eachOutputFromInput?.length > 1) {
             modules  = [...modules , ...eachOutputFromInput]
-        }
+        // }
     })
     const outputData = getPageTitleTransformed(sourceData, modules);
     return outputData;
